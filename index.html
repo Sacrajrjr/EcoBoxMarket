@@ -1,0 +1,707 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EcoBox Market</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Customizado CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<script src="script.js"></script>
+<body>
+
+  <!-- Aba de navegação -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3 sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <div class="logo-circle d-flex align-items-center justify-content-center">
+          <i class="fas fa-leaf"></i>
+        </div>
+        <span class="brand-text">EcoBox Market</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#home">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>  
+          <li class="nav-item"><a class="nav-link" href="#kits">Kits</a></li>
+          <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+          <li class="nav-item ms-3">
+            <a class="btn btn-outline-success rounded-circle cart-btn" href="#"><i class="fas fa-shopping-cart"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="home" class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="container position-relative">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <p class="hero-subtitle"><i class="fas fa-leaf me-2"></i>Produtos Sustentáveis</p>
+          <h1 class="hero-title">Viva de Forma <span>Mais Sustentável</span></h1>
+          <p class="hero-desc">
+            Descubra nossa coleção de produtos ecológicos e kits sustentáveis que ajudam você a reduzir o impacto ambiental
+            sem abrir mão da qualidade.
+          </p>
+
+          <div class="d-flex gap-3 align-items-center mt-4">
+            <a href="#produtos" class="btn btn-success btn-lg">Ver Produtos <i class="fas fa-arrow-right ms-2"></i></a>
+            <form class="d-inline-block search-hero">
+              <input class="form-control" placeholder="Pesquisar produto..." aria-label="Pesquisar">
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Barra de Metricas -->
+      <div class="metrics-card shadow-lg rounded-4 mt-5 mx-auto">
+        <div class="row text-center py-3 gx-0">
+          <div class="col-md-4">
+            <div class="metric-item">
+              <i class="fas fa-seedling fa-2x"></i>
+              <h4>50k+</h4>
+              <small>Produtos Vendidos</small>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="metric-item">
+              <i class="fas fa-recycle fa-2x"></i>
+              <h4>30%</h4>
+              <small>Redução de Resíduos</small>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="metric-item">
+              <i class="fas fa-heart fa-2x"></i>
+              <h4>98%</h4>
+              <small>Clientes Satisfeitos</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Produtos -->
+  <section id="produtos" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Produtos em Destaque</h2>
+        <p class="section-sub">Descubra nossa seleção especial de produtos sustentáveis que fazem a diferença para você e para o planeta.</p>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Produto 1 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card product-card h-100 shadow-sm border-0">
+            <div class="position-relative">
+              <img src="Utensilios de bambu.jpeg" class="card-img-top rounded-top" alt="">
+              <span class="badge eco-badge">Eco</span>
+              <span class="badge discount-badge">-31%</span>
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <span class="small badge bg-light text-dark">Cozinha</span>
+                <span class="text-warning"><i class="fas fa-star"></i> 4.8</span>
+              </div>
+              <h5 class="card-title">Kit Utensílios de Bambu</h5>
+              <p class="card-text text-muted small">Conjunto completo de utensílios sustentáveis feitos de bambu orgânico.</p>
+            </div>
+            <div class="card-footer bg-white border-0 pt-0 pb-4">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <div class="price">R$ <span class="price-value">89.90</span></div>
+                  <small class="text-muted"><s>R$ 129.90</s></small>
+                </div>
+                <a href="#" class="btn btn-success rounded-pill px-4 add-to-cart">
+  <i class="fas fa-shopping-cart me-2"></i>Adicionar
+</a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card product-card h-100 shadow-sm border-0">
+            <div class="position-relative">
+              <img src="sacolas reutilizaveis premium.jpeg" class="card-img-top rounded-top" alt="">
+              <span class="badge eco-badge">Eco</span>
+              <span class="badge discount-badge">-30%</span>
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <span class="small badge bg-light text-dark">Lifestyle</span>
+                <span class="text-warning"><i class="fas fa-star"></i> 4.9</span>
+              </div>
+              <h5 class="card-title">Sacolas Reutilizáveis Premium</h5>
+              <p class="card-text text-muted small">Set de 5 sacolas eco-friendly para suas compras sustentáveis.</p>
+            </div>
+            <div class="card-footer bg-white border-0 pt-0 pb-4">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <div class="price">R$ <span class="price-value">45.90</span></div>
+                  <small class="text-muted"><s>R$ 65.90</s></small>
+                </div>
+                <button class="btn btn-success rounded-pill px-4 add-to-cart"><i class="fas fa-shopping-cart me-2"></i>Adicionar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 3 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card product-card h-100 shadow-sm border-0">
+            <div class="position-relative">
+              <img src="Produtos de limpeza naturais.jpeg" class="card-img-top rounded-top" alt="">
+              <span class="badge eco-badge">Eco</span>
+              <span class="badge discount-badge">-21%</span>
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <span class="small badge bg-light text-dark">Limpeza</span>
+                <span class="text-warning"><i class="fas fa-star"></i> 4.7</span>
+              </div>
+              <h5 class="card-title">Produtos de Limpeza Naturais</h5>
+              <p class="card-text text-muted small">Kit completo de produtos de limpeza biodegradáveis e não tóxicos.</p>
+            </div>
+            <div class="card-footer bg-white border-0 pt-0 pb-4">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <div class="price">R$ <span class="price-value">75.90</span></div>
+                  <small class="text-muted"><s>R$ 95.90</s></small>
+                </div>
+                <button class="btn btn-success rounded-pill px-4 add-to-cart"><i class="fas fa-shopping-cart me-2"></i>Adicionar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 4 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card product-card h-100 shadow-sm border-0">
+            <div class="position-relative">
+              <img src="kit zero waste.jpeg" class="card-img-top rounded-top" alt="">
+              <span class="badge eco-badge">Eco</span>
+              <span class="badge discount-badge">-24%</span>
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <span class="small badge bg-light text-dark">Kit Completo</span>
+                <span class="text-warning"><i class="fas fa-star"></i> 5</span>
+              </div>
+              <h5 class="card-title">Kit Zero Waste Iniciante</h5>
+              <p class="card-text text-muted small">Tudo que você precisa para começar sua jornada zero waste.</p>
+            </div>
+            <div class="card-footer bg-white border-0 pt-0 pb-4">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <div class="price">R$ <span class="price-value">120.90</span></div>
+                  <small class="text-muted"><s>R$ 159.90</s></small>
+                </div>
+                <button class="btn btn-success rounded-pill px-4 add-to-cart"><i class="fas fa-shopping-cart me-2"></i>Adicionar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="text-center mt-5">
+        <a href="#" class="btn btn-outline-success rounded-pill px-4">Ver Todos os Produtos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section id="sobre" class="py-5 bg-light-green">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-6">
+          <h6 class="small-sub"><i class="fas fa-leaf"></i> Nossa Missão</h6>
+          <h2 class="mb-4">Sobre a EcoBox Market</h2>
+          <p class="text-muted">Fundada em 2019, a EcoBox Market nasceu da paixão por um mundo mais sustentável.
+            Selecionamos cuidadosamente cada produto em nossa loja, garantindo que sejam sustentáveis, de alta qualidade e acessíveis.</p>
+
+          <ul class="list-unstyled mt-4 mb-4">
+            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Produtos 100% sustentáveis e orgânicos</li>
+            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Embalagens biodegradáveis e reutilizáveis</li>
+            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Parcerias com produtores locais</li>
+            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Programa de reciclagem integrado</li>
+          </ul>
+
+          <div class="row text-center">
+            <div class="col-4">
+              <h4 class="counter">5</h4>
+              <small class="d-block">Prêmios</small>
+            </div>
+            <div class="col-4">
+              <h4 class="counter">50k+</h4>
+              <small class="d-block">Clientes Ativos</small>
+            </div>
+            <div class="col-4">
+              <h4 class="counter">1000+</h4>
+              <small class="d-block">Ton. Recicladas</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 text-center">
+          <img src="Tomate.jpeg">
+          <div class="floating-card bg-success text-white rounded-3 shadow-lg mt-3 d-inline-block p-3">
+            <i class="fas fa-leaf fa-lg"></i>
+            <div class="small">100%</div>
+            <div>Produtos Sustentáveis</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kits -->
+  <section id="kits" class="py-5">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h6 class="small-sub"><i class="fas fa-box-open"></i> Kits Especiais</h6>
+        <h2>Kits EcoBox</h2>
+        <p class="text-muted">Conjuntos cuidadosamente selecionados para diferentes necessidades.</p>
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card kit-card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+            <img src="Produtos de limpeza naturais.jpeg" class="card-img-top" alt="">
+            <div class="card-body">
+              <span class="badge badge-orange mb-2">Mais Vendido</span>
+              <h5 class="card-title">Kit Família Sustentável</h5>
+              <p class="text-muted small">Tudo que sua família precisa para viver de forma mais ecológica no dia a dia.</p>
+
+              <ul class="list-unstyled mt-3 mb-3">
+                <li>Produtos de limpeza</li>
+                <li>Utensílios de bambu</li>
+                <li>Sacolas reutilizáveis</li>
+              </ul>
+
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <div class="price">R$ <span class="price-value">189.90</span></div>
+                  <small class="text-muted"><s>R$ 259.90</s></small>
+                </div>
+                <button class="btn btn-success rounded-pill px-4 add-to-cart">Adicionar Kit</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kit 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card kit-card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+            <img src="kit zero waste.jpeg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Kit Casa Limpa Verde</h5>
+              <p class="text-muted small">Produtos naturais e biodegradáveis para toda sua casa.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <div class="price">R$ <span class="price-value">95.90</span></div>
+                  <small class="text-muted"><s>R$ 129.90</s></small>
+                </div>
+                <button class="btn btn-success rounded-pill px-4 add-to-cart">Adicionar Kit</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kit 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card kit-card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+            <img src="Utensilios de bambu.jpeg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Kit Baby Eco</h5>
+              <p class="text-muted small">Produtos seguros e naturais para o cuidado do seu bebê.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <div class="price">R$ <span class="price-value">149.90</span></div>
+                  <small class="text-muted"><s>R$ 199.90</s></small>
+                </div>
+                <button class="btn btn-success rounded-pill px-4 add-to-cart">Adicionar Kit</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="text-center mt-4">
+        <a href="#" class="btn btn-outline-success rounded-pill px-4">Personalizar Kit</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Depoimentos -->
+  <section class="py-5 bg-light-green">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h6 class="small-sub"><i class="fas fa-heart"></i> Depoimentos</h6>
+        <h2>O Que Nossos Clientes Dizem</h2>
+        <p class="text-muted">Veja como a EcoBox Market está transformando vidas e ajudando famílias a viverem de forma mais sustentável.</p>
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card testimonial-card h-100 shadow-sm rounded-4 p-4">
+            <div class="stars text-warning mb-3">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="fst-italic">"A EcoBox Market mudou nossa rotina familiar! Os produtos são incríveis e as crianças adoram usar os utensílios de bambu."</p>
+            <div class="d-flex align-items-center mt-3">
+              <div class="avatar bg-success text-white rounded-circle me-3">MO</div>
+              <div>
+                <strong>Marina Oliveira</strong><br>
+                <small class="text-muted">Mãe de 2 filhos — São Paulo, SP</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card testimonial-card h-100 shadow-sm rounded-4 p-4">
+            <div class="stars text-warning mb-3">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="fst-italic">"Como chef, eu preciso de produtos de qualidade. Os kits da EcoBox são perfeitos - sustentáveis, duráveis e com ótimo custo-benefício."</p>
+            <div class="d-flex align-items-center mt-3">
+              <div class="avatar bg-success text-white rounded-circle me-3">CM</div>
+              <div>
+                <strong>Carlos Mendes</strong><br>
+                <small class="text-muted">Chef de Cozinha — Rio de Janeiro, RJ</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card testimonial-card h-100 shadow-sm rounded-4 p-4">
+            <div class="stars text-warning mb-3">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="fst-italic">"Descobri a EcoBox há 6 meses e já virei cliente fiel! A qualidade dos produtos e o atendimento são excepcionais."</p>
+            <div class="d-flex align-items-center mt-3">
+              <div class="avatar bg-success text-white rounded-circle me-3">LS</div>
+              <div>
+                <strong>Lívia Santos</strong><br>
+                <small class="text-muted">Influencer Eco — Belo Horizonte, MG</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Blog -->
+  <section id="blog" class="py-5">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h6 class="small-sub"><i class="fas fa-book"></i> Blog EcoBox</h6>
+        <h2>Dicas de Sustentabilidade</h2>
+        <p class="text-muted">Aprenda com nossos especialistas como viver de forma mais sustentável.</p>
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card blog-card h-100 shadow-sm">
+            <img src="Produtos de limpeza naturais.jpeg" class="card-img-top" alt="">
+            <div class="card-body">
+              <small class="text-muted d-block mb-2">15 Jan 2025 — Ana Verde — 5 min</small>
+              <h5 class="card-title">10 Dicas para uma Casa Mais Sustentável</h5>
+              <p class="text-muted small">Descubra maneiras simples e eficazes de tornar sua casa mais ecológica sem gastar muito.</p>
+              <a href="#" class="read-more text-success">Ler mais <i class="fas fa-arrow-right ms-1"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card blog-card h-100 shadow-sm">
+            <img src="kit zero waste.jpeg" class="card-img-top" alt="">
+            <div class="card-body">
+              <small class="text-muted d-block mb-2">12 Jan 2025 — Carlos Eco — 7 min</small>
+              <h5 class="card-title">O Poder do Zero Waste na Cozinha</h5>
+              <p class="text-muted small">Como reduzir drasticamente o desperdício alimentar com práticas simples.</p>
+              <a href="#" class="read-more text-success">Ler mais <i class="fas fa-arrow-right ms-1"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card blog-card h-100 shadow-sm">
+            <img src="produtos naturais.jpeg" class="card-img-top" alt="">
+            <div class="card-body">
+              <small class="text-muted d-block mb-2">08 Jan 2025 — Marina Silva — 6 min</small>
+              <h5 class="card-title">Produtos Naturais para Limpeza: Guia Completo</h5>
+              <p class="text-muted small">Aprenda a fazer produtos de limpeza naturais usando ingredientes simples.</p>
+              <a href="#" class="read-more text-success">Ler mais <i class="fas fa-arrow-right ms-1"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="text-center mt-4">
+        <a href="#" class="btn btn-outline-success rounded-pill px-4">Ver Todos os Artigos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="py-5 bg-light-green">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h6 class="small-sub"><i class="fas fa-comment-dots"></i> Fale Conosco</h6>
+        <h2>Entre em Contato</h2>
+        <p class="text-muted">Tem alguma dúvida sobre nossos produtos sustentáveis? Nossa equipe está pronta para ajudar!</p>
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-lg-4">
+          <div class="card contact-info shadow-sm rounded-4 p-4 mb-3">
+            <div class="d-flex align-items-start gap-3">
+              <div class="icon-box"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <h6>Endereço</h6>
+                <p class="text-muted mb-0">Rua Verde, 123 - Jardim Sustentável<br>São Paulo, SP - 04567-890</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card contact-info shadow-sm rounded-4 p-4 mb-3">
+            <div class="d-flex align-items-start gap-3">
+              <div class="icon-box"><i class="fas fa-phone"></i></div>
+              <div>
+                <h6>Telefone</h6>
+                <p class="text-muted mb-0">(11) 3456-7890<br>(11) 98765-4321</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card contact-info shadow-sm rounded-4 p-4">
+            <div class="d-flex align-items-start gap-3">
+              <div class="icon-box"><i class="fas fa-envelope"></i></div>
+              <div>
+                <h6>Email</h6>
+                <p class="text-muted mb-0">contato@ecoboxmarket.com.br<br>atendimento@ecoboxmarket.com.br</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-8">
+          <div class="card shadow-sm rounded-4 p-0 overflow-hidden">
+            <div class="p-3 bg-success text-white">
+              <strong><i class="fas fa-comment-dots me-2"></i> Envie sua Mensagem</strong>
+            </div>
+            <div class="card-body p-4">
+              <form id="contatoForm" novalidate>
+  <div class="row g-3">
+
+    <div class="col-md-6">
+      <label class="form-label">Nome Completo</label>
+      <input id="nome" class="form-control" placeholder="Seu nome completo">
+      <small class="text-danger" id="erro-nome"></small>
+    </div>
+
+    <div class="col-md-6">
+      <label class="form-label">Email</label>
+      <input id="email" class="form-control" placeholder="seu@email.com">
+      <small class="text-danger" id="erro-email"></small>
+    </div>
+
+    <div class="col-md-6">
+      <label class="form-label">Telefone</label>
+      <input id="telefone" class="form-control" placeholder="(11) 99999-9999">
+      <small class="text-danger" id="erro-telefone"></small>
+    </div>
+
+    <div class="col-md-6">
+      <label class="form-label">Assunto</label>
+      <input id="assunto" class="form-control" placeholder="Como podemos ajudar?">
+      <small class="text-danger" id="erro-assunto"></small>
+    </div>
+
+    <div class="col-12">
+      <label class="form-label">Mensagem</label>
+      <textarea id="mensagem" class="form-control" rows="5" placeholder="Conte-nos como podemos ajudar..."></textarea>
+      <small class="text-danger" id="erro-mensagem"></small>
+    </div>
+
+    <div class="col-12">
+      <div class="small text-muted mb-2">Ao enviar esta mensagem, você está contribuindo para um futuro mais sustentável!</div>
+      <button class="btn btn-success btn-lg px-5" type="submit">Enviar Mensagem</button>
+    </div>
+
+  </div>
+</form>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-4 bg-white border-top">
+    <div class="container text-center">
+      <p class="mb-1">© 2025 EcoBox Market — Todos os direitos reservados</p>
+      <small>Feito para fins acadêmicos</small>
+    </div>
+  </footer>
+
+  <!-- 🔥 CARRINHO LATERAL (SIDE CART) -->
+<div id="sideCart" class="sidecart shadow-lg">
+  <div class="sidecart-header d-flex justify-content-between align-items-center p-3 bg-success text-white">
+    <h5 class="m-0"><i class="fas fa-shopping-cart me-2"></i> Meu Carrinho</h5>
+    <button id="closeCart" class="btn btn-light btn-sm rounded-circle">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+
+  <div class="sidecart-body p-3">
+    <ul id="carrinho-lista" class="list-unstyled"></ul>
+
+    <div class="cart-footer mt-4">
+      <h5>Total: <strong>R$ <span id="carrinho-total">0.00</span></strong></h5>
+      <button class="btn btn-danger w-100 mt-3" onclick="limparCarrinho()">Limpar Carrinho</button>
+      <button class="btn btn-success w-100 mt-2">Finalizar Compra</button>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- 🔥 SCRIPT DE ABERTURA E FECHAMENTO DO CARRINHO -->
+<script>
+  const cartBtn = document.querySelector(".cart-btn");
+  const sideCart = document.getElementById("sideCart");
+  const closeCart = document.getElementById("closeCart");
+
+  cartBtn.addEventListener("click", (event) => {
+    event.preventDefault();   // ⛔ impede voltar ao topo
+    sideCart.classList.add("open");
+  });
+
+  closeCart.addEventListener("click", () => {
+    sideCart.classList.remove("open");
+  });
+</script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+
+<script>
+document.getElementById("contatoForm").addEventListener("submit", function (e) {
+    e.preventDefault(); // evita envio se houver erros
+
+    let valido = true;
+
+    // Campos
+    const nome = document.getElementById("nome");
+    const email = document.getElementById("email");
+    const telefone = document.getElementById("telefone");
+    const assunto = document.getElementById("assunto");
+    const mensagem = document.getElementById("mensagem");
+
+    // Mensagens de erro
+    const erroNome = document.getElementById("erro-nome");
+    const erroEmail = document.getElementById("erro-email");
+    const erroTelefone = document.getElementById("erro-telefone");
+    const erroAssunto = document.getElementById("erro-assunto");
+    const erroMensagem = document.getElementById("erro-mensagem");
+
+    // Limpar erros
+    erroNome.textContent = "";
+    erroEmail.textContent = "";
+    erroTelefone.textContent = "";
+    erroAssunto.textContent = "";
+    erroMensagem.textContent = "";
+
+    // 📝 Validação Nome
+    if (nome.value.trim().length < 3) {
+        erroNome.textContent = "Digite seu nome completo.";
+        valido = false;
+    }
+
+    // 📨 Validação Email
+    const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!regexEmail.test(email.value.trim())) {
+        erroEmail.textContent = "Digite um email válido.";
+        valido = false;
+    }
+
+    // 📱 Validação Telefone
+    const regexTel = /^\(?\d{2}\)?[\s-]?\d{4,5}-?\d{4}$/;
+    if (!regexTel.test(telefone.value.trim())) {
+        erroTelefone.textContent = "Digite um telefone válido.";
+        valido = false;
+    }
+
+    // 📌 Assunto obrigatório
+    if (assunto.value.trim().length < 3) {
+        erroAssunto.textContent = "Digite o assunto.";
+        valido = false;
+    }
+
+    // 🖊 Mensagem obrigatória
+    if (mensagem.value.trim().length < 10) {
+        erroMensagem.textContent = "A mensagem precisa ter pelo menos 10 caracteres.";
+        valido = false;
+    }
+
+    // 🚀 Se estiver tudo válido
+    if (valido) {
+        alert("Mensagem enviada com sucesso! 🌱💚");
+
+        // opcional: limpar o formulário
+        nome.value = "";
+        email.value = "";
+        telefone.value = "";
+        assunto.value = "";
+        mensagem.value = "";
+    }
+});
+</script>
+
+</body>
+</html>
