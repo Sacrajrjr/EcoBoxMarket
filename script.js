@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
             listaCarrinho.appendChild(li);
         });
 
-        totalCarrinho.innerText = total.toFixed(2);
+        totalCarrinho.innerText = total.;
     }
 
     // --- ALTERAR QUANTIDADE (+/-) ---
@@ -119,3 +119,4 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 });
+
