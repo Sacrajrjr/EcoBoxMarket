@@ -3,11 +3,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const botoes = document.querySelectorAll(".add-to-cart");
     const listaCarrinho = document.getElementById("carrinho-lista");
     const totalCarrinho = document.getElementById("carrinho-total");
+    const contadorCarrinho = document.getElementById("cart-count");
 
     // --- CARREGAR DO LOCALSTORAGE ---
     let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
 
     atualizarCarrinho();
+    atualizarContador();
 
     // --- ADICIONAR ITEM AO CARRINHO ---
     botoes.forEach(botao => {
@@ -33,6 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             salvarCarrinho();
             atualizarCarrinho();
+            atualizarContador();
         });
     });
 
@@ -83,6 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         salvarCarrinho();
         atualizarCarrinho();
+        atualizarContador();
     };
 
     // --- REMOVER ITEM ---
@@ -90,6 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
         carrinho.splice(index, 1);
         salvarCarrinho();
         atualizarCarrinho();
+        atualizarContador();
     };
 
     // --- LIMPAR CARRINHO ---
@@ -97,11 +102,20 @@ document.addEventListener("DOMContentLoaded", () => {
         carrinho = [];
         salvarCarrinho();
         atualizarCarrinho();
+        atualizarContador();
     };
 
     // --- SALVAR NO LOCALSTORAGE ---
     function salvarCarrinho() {
         localStorage.setItem("carrinho", JSON.stringify(carrinho));
+    }
+
+    // --- CONTADOR DO CARRINHO (NOVO) ---
+    function atualizarContador() {
+        const totalItens = carrinho.reduce((soma, item) => soma + item.quantidade, 0);
+
+        contadorCarrinho.textContent = totalItens;
+        contadorCarrinho.style.display = totalItens > 0 ? "inline-block" : "none";
     }
 
 });
